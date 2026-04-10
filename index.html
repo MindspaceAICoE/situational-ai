@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situational AI</title>
+  <meta name="description" content="Situational AI - Context-aware artificial intelligence that adapts to your environment.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">&#9670;</span> Situational AI
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#video">Demo</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="#contact" class="btn btn-nav">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Next-Generation AI</div>
+      <h1>AI That Understands <br><span class="gradient-text">Your Situation</span></h1>
+      <p class="hero-subtitle">
+        Situational AI adapts to context, environment, and intent — delivering
+        intelligence that truly understands the moment.
+      </p>
+      <div class="hero-actions">
+        <a href="#video" class="btn btn-primary">Watch the Demo</a>
+        <a href="blog/" class="btn btn-outline">Read the Blog</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">Context</span>
+          <span class="stat-label">Aware</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">Real-time</span>
+          <span class="stat-label">Adaptive</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">Human</span>
+          <span class="stat-label">Centered</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About</span>
+        <h2>What is Situational AI?</h2>
+        <p class="section-subtitle">
+          Traditional AI gives you answers. Situational AI gives you the <em>right</em> answers
+          for <em>right now</em>. By understanding context, environment, and intent, it delivers
+          intelligence that adapts to the situation at hand.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">&#128161;</div>
+          <h3>Context-First Design</h3>
+          <p>Every interaction is informed by the full context of the situation — not just the words, but the meaning behind them.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">&#9889;</div>
+          <h3>Dynamic Adaptation</h3>
+          <p>Responses and behaviors shift fluidly as conditions change, ensuring relevance at every moment.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">&#127919;</div>
+          <h3>Intent Understanding</h3>
+          <p>Goes beyond surface-level queries to understand what you actually need, bridging the gap between asking and meaning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="section section-dark" id="video">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Demo</span>
+        <h2>See It in Action</h2>
+        <p class="section-subtitle">
+          Watch how Situational AI understands and adapts to real-world scenarios.
+        </p>
+      </div>
+      <div class="video-wrapper">
+        <div class="video-container" id="videoContainer">
+          <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+          <div class="video-placeholder" id="videoPlaceholder">
+            <div class="play-button" id="playButton">
+              <svg viewBox="0 0 68 48" width="68" height="48">
+                <path class="play-bg" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z" fill="#FF0000"/>
+                <path d="M 45,24 27,14 27,34" fill="#fff"/>
+              </svg>
+            </div>
+            <p class="video-placeholder-text">Click to load video</p>
+            <p class="video-note">Paste your YouTube video URL below to embed it</p>
+          </div>
+          <iframe
+            id="videoFrame"
+            class="video-frame hidden"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-url-input">
+          <input type="text" id="youtubeUrl" placeholder="Paste YouTube URL here (e.g. https://youtube.com/watch?v=...)" />
+          <button class="btn btn-primary btn-sm" id="loadVideoBtn">Load Video</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2>Why Situational AI?</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-number">01</div>
+          <h3>Environment Sensing</h3>
+          <p>Continuously reads signals from the surrounding context to build a rich understanding of the current situation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">02</div>
+          <h3>Adaptive Responses</h3>
+          <p>Tailors outputs dynamically — the same question can yield different, equally valid answers depending on when, where, and how it's asked.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">03</div>
+          <h3>Temporal Awareness</h3>
+          <p>Understands the flow of time — what happened before, what's happening now, and what's likely to happen next.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">04</div>
+          <h3>Multi-Modal Input</h3>
+          <p>Processes text, images, audio, and sensor data together to form a complete picture of any situation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">05</div>
+          <h3>Privacy by Design</h3>
+          <p>Context-awareness without compromise — built with privacy-first architecture that keeps sensitive data protected.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">06</div>
+          <h3>Seamless Integration</h3>
+          <p>Plugs into existing workflows and systems, enhancing them with situational intelligence without disruption.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Preview Section -->
+  <section class="section section-dark" id="blog-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Blog</span>
+        <h2>Latest Insights</h2>
+        <p class="section-subtitle">Thoughts, research, and updates from the Situational AI team.</p>
+      </div>
+      <div class="blog-grid">
+        <a href="blog/introducing-situational-ai.html" class="blog-card">
+          <div class="blog-card-tag">Announcement</div>
+          <h3>Introducing Situational AI</h3>
+          <p>Why we believe context-aware intelligence is the next frontier in AI — and what we're building to get there.</p>
+          <span class="blog-card-date">Read more &rarr;</span>
+        </a>
+        <a href="blog/context-is-everything.html" class="blog-card">
+          <div class="blog-card-tag">Research</div>
+          <h3>Context Is Everything</h3>
+          <p>How environmental awareness transforms AI from a tool into a true collaborator.</p>
+          <span class="blog-card-date">Read more &rarr;</span>
+        </a>
+        <a href="blog/future-of-adaptive-ai.html" class="blog-card">
+          <div class="blog-card-tag">Vision</div>
+          <h3>The Future of Adaptive AI</h3>
+          <p>A look at where situational intelligence is heading and the problems it will solve.</p>
+          <span class="blog-card-date">Read more &rarr;</span>
+        </a>
+      </div>
+      <div class="section-cta">
+        <a href="blog/" class="btn btn-outline">View All Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="section-header">
+          <span class="section-tag">Contact</span>
+          <h2>Get in Touch</h2>
+          <p class="section-subtitle">
+            Interested in Situational AI? We'd love to hear from you.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com" class="contact-link" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://twitter.com" class="contact-link" target="_blank" rel="noopener">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter / X
+          </a>
+          <a href="mailto:hello@situational.ai" class="contact-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-icon">&#9670;</span> Situational AI
+        </div>
+        <p class="footer-text">&copy; 2026 Situational AI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
