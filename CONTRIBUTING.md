@@ -1,6 +1,6 @@
 # Contributing to Situational AI
 
-Situational AI is more than code — it's a movement to give AI operational competence through situational awareness. Contributions go beyond pull requests.
+Situational AI is a new approach to giving AI operational competence through situational awareness. Contributions go beyond pull requests.
 
 ## Ways to Contribute
 
@@ -36,6 +36,12 @@ The core of Situational AI is the **situation** — a structured encoding of how
 - **Situation write-ups** — Open a PR with your situation document
 - **Blog posts** — Submit as a PR to the `blog/` directory
 - **Bug fixes & improvements** — Standard PR workflow
+
+## After Joining
+
+Once you've accepted the org invite, please set your membership visibility to **Public** so others can see our growing community:
+1. Go to [People](https://github.com/orgs/Situational-AI/people)
+2. Find your name → change visibility to **Public**
 
 ## Code of Conduct
 
